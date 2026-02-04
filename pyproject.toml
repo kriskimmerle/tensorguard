@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "tensorguard"
+version = "0.1.0"
+description = "AI Model File Inspector & Security Scanner — inspect safetensors and GGUF files without ML libraries"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+keywords = ["safetensors", "gguf", "model-security", "ai-security", "machine-learning", "deep-learning", "model-inspection"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+authors = [
+    {name = "Kris Kimmerle"}
+]
+
+[project.scripts]
+tensorguard = "tensorguard:main"
+
+[project.urls]
+Homepage = "https://github.com/kriskimmerle/tensorguard"
+Repository = "https://github.com/kriskimmerle/tensorguard"
+Issues = "https://github.com/kriskimmerle/tensorguard/issues"
